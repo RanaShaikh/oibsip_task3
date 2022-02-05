@@ -40,13 +40,13 @@
       grid-gap:3px;
     }
     .btn{
-        width: 55px;
+        width: 60px;
         height: 45px;
         
     }
     .buttons input
     {
-        width:300px;
-        margin-left: 4px;
+        width:265px;
+      
     }
 }
