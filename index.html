@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator | Rana</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+        <div class="calculator">
+            <div class="buttons" id="button">
+                <input type="text" name="screen" id="display_screen">
+                <button class="btn" id="cancel">C</button>
+                <button class="btn">(</button>
+                <button class="btn">)</button>
+                <button class="btn">%</button>
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">X</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">-</button>
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">+</button>
+                <button class="btn">0</button>
+                <button class="btn">.</button>
+                <button class="btn">/</button>
+                <button class="btn">=</button>
+            </div>
+        </div>
+</body>
+<script>
+let sc=document.getElementById('display_screen');
+buttons=document.querySelectorAll('button');
+let screenvalue='';
+for(item of buttons)
+{
+    item.addEventListener('click',(e)=>{
+        buttonText=e.target.innerText;
+        console.log('Button Text is ',buttonText);
+        if(buttonText=='X')
+        {
+            buttonText='*';
+            screenvalue+=buttonText;
+            sc.value=screenvalue;
+        }
+        else if(buttonText == 'C')
+        {
+            screenvalue=" ";
+            sc.value=screenvalue;
+        }
+        else if(buttonText=='='){
+            sc.value=eval(screenvalue);
+        }
+        
+        else
+        {
+            screenvalue+=buttonText;
+            sc.value=screenvalue;
+        }
+
+    })
+}
+
+</script>
+
+
+</html>

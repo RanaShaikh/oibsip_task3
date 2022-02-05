@@ -1,0 +1,52 @@
+
+@media screen and (max-width: 1155px) {
+    .buttons {
+      width: 35vw;
+    }
+}
+@media screen and (max-width: 936px) {
+    .buttons {
+      width: 40vw;
+    }
+}
+@media screen and (max-width: 828px) {
+    .buttons {
+      width: 50vw;
+    }
+}
+@media screen and (max-width: 678px) {
+    .buttons {
+      width: 60vw;
+    }
+}
+@media screen and (max-width: 552px) {
+    .buttons {
+      width: 75vw;
+    }
+}
+@media screen and (max-width: 438px) {
+    .buttons {
+      width: 85vw;
+    }
+}
+@media screen and (max-width: 392px) {
+    .buttons {
+      width: 100vw;
+    }
+}
+@media screen and (max-width: 460px) {
+    .buttons {
+      width: 100vw;
+      grid-gap:3px;
+    }
+    .btn{
+        width: 55px;
+        height: 45px;
+        
+    }
+    .buttons input
+    {
+        width:300px;
+        margin-left: 4px;
+    }
+}
